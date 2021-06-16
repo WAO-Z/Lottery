@@ -1,0 +1,75 @@
+*{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	text-decoration: none;
+}
+
+.fl {
+float: left;
+}
+
+.drawBox {
+    margin-top: 10vh;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-content: space-around;
+    width: 636px;
+	height: 636px;
+	border: 2px solid red;
+   
+    div{
+        width: 200px;
+		height: 200px;
+		line-height: 200px;
+		border: 2px solid #87ceeb;
+        img {
+            width: 100%;
+            height: 100%;
+        }
+        &:nth-child(4) {
+            order: 4;
+        }
+        &:nth-child(5) {
+            order: 8;
+        }
+        &:nth-child(6) {
+            order: 7;
+        }
+        &:nth-child(7) {
+            order: 6;
+        }
+        &.active{
+            transform: scale(0.95);
+            border: 2px solid #f1083b;   
+        }
+        &.startBtn{
+            background-color: #c1c1c1;
+            color: #fff;
+            border-radius: 50%;
+            cursor: pointer;
+            text-align: center;
+            font-size: 36px;
+        }
+    }
+}
+
+.winning {
+        margin: 10vw;
+    .pic {
+        width: 200px;
+        height: 200px;
+        overflow: hidden;
+        
+        img {
+            width: 100%;
+        }
+        li {
+            font-size: 0;
+        }
+    }
+    .prizeName {
+        text-align: center;
+    }
+}
